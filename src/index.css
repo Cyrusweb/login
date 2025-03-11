@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-checkbox {
+  /* Remove default appearance */
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #191821;
+  border: 2px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-checkbox:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 1rem;
+}
