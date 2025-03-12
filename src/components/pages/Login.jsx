@@ -1,6 +1,7 @@
 import React from "react";
 import GoogleAuth from "../GoogleAuth";
 import FacebookAuth from "./FacebookAuth";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -15,9 +16,11 @@ function Login() {
             <header className="relative">
               <p className="text-white">
                 Didn’t have an account?{" "}
-                <span className="bg-gradient-to-r from-[#6857F6] to-[#A549E2] bg-clip-text text-transparent">
-                  Signup
-                </span>{" "}
+                <Link to="/signup">
+                  <span className="bg-gradient-to-r from-[#6857F6] to-[#A549E2] bg-clip-text text-transparent">
+                    Signup
+                  </span>{" "}
+                </Link>
               </p>
             </header>
           </div>
@@ -57,6 +60,15 @@ function Login() {
                 <span className="underline">Privacy Policy</span>
               </p>
             </article> */}
+
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                className="bg-white px-4 py-1 rounded-full w-full font-Inter"
+              >
+                Login
+              </button>
+            </div>
           </form>
         </article>
       </section>

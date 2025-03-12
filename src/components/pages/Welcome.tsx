@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
@@ -16,20 +17,26 @@ function Welcome() {
             </p>
           </div>
           <div className=" text-center text-white">
-            <div className="rounded-full border border-[#A549E2] px-6  lg:px-12 py-3">
-              Sign Up As a Freelancer
-            </div>
-            <div className="rounded-full border border-[#A549E2] px-6  lg:px-12 py-3 mt-4 ">
-              Sign Up As a Client
-            </div>
+            <Link to="/signup">
+              <div className="rounded-full border border-[#A549E2] px-6  lg:px-12 py-3">
+                Sign Up As a Freelancer
+              </div>
+            </Link>
+            <Link to="login">
+              <div className="rounded-full border border-[#A549E2] px-6  lg:px-12 py-3 mt-4 ">
+                Sign Up As a Client
+              </div>
+            </Link>
           </div>
         </article>
         <footer className="relative">
           <p className="text-white">
             Already have an account ?{" "}
-            <span className="bg-gradient-to-r from-[#6857F6] to-[#A549E2] bg-clip-text text-transparent">
-              Log In
-            </span>{" "}
+            <Link to="login">
+              <span className="bg-gradient-to-r from-[#6857F6] to-[#A549E2] bg-clip-text text-transparent">
+                Log In
+              </span>
+            </Link>
           </p>
         </footer>
       </section>

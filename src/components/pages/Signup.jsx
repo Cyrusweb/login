@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+// EmailVerifcation
 import GoogleAuth from "../GoogleAuth";
 import FacebookAuth from "./FacebookAuth";
+import EmailVerifcation from "./EmailVerifcation";
+import { Link } from "react-router-dom";
+
 function Signup() {
+  const [showVerification, setShowVerification] = useState(false);
+
+  const handleSignupClick = (e) => {
+    e.preventDefault(); // Prevent form submission
+    setShowVerification(true);
+  };
+
+  const handleCloseVerification = () => {
+    setShowVerification(false);
+  };
   return (
     <main className="bg-[#0e0f12] md:px-20  px-1 lg:px-4 py-4 min-h-screen lg:grid grid-cols-2 gap-x-10">
       <section className="lg:bg-[#191821]  font-Inter flex flex-col gap-y-32  md:gap-y-44 rounded-[18px] px-4  py-3">
@@ -14,13 +28,17 @@ function Signup() {
             <header className="relative">
               <p className="text-white">
                 Already have an account ?{" "}
-                <span className="bg-gradient-to-r from-[#6857F6] to-[#A549E2] bg-clip-text text-transparent">
-                  Log In
-                </span>{" "}
+                <Link to="/login">
+                  <span className="bg-gradient-to-r from-[#6857F6] to-[#A549E2] bg-clip-text text-transparent">
+                    Log In
+                  </span>
+                </Link>
               </p>
             </header>
           </div>
-
+          {showVerification && (
+            <EmailVerifcation onClose={handleCloseVerification} />
+          )}
           <form className="space-y-4">
             <input
               type="text"
@@ -42,6 +60,16 @@ function Signup() {
               <hr className="flex-1 h-px  border-[#A549E2]" />
               <p className="mx-4 text-white font-Inter">or register with</p>
               <hr className="flex-1 h-px border-[#A549E2]" />
+            </div>
+            {/* click test */}
+            <div className="flex justify-center">
+              <button
+                onClick={handleSignupClick}
+                type="submit"
+                className="bg-white px-4 py-1 rounded-full w-full font-Inter"
+              >
+                Signup
+              </button>
             </div>
 
             <div className="grid grid-cols-2 gap-x-4 mb-8">
