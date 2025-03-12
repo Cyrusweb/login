@@ -38,11 +38,7 @@ function Login() {
                 placeholder="Full Name"
               />
             </div>
-            {/* <input
-              type="text"
-              placeholder="password"
-              className="border border-[#A549E2] focus:outline-none bg-transparent placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white px-4 rounded-full py-2 w-full text-white"
-            /> */}
+
             <div class="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
               <input
                 type="text"
@@ -60,19 +56,11 @@ function Login() {
               <GoogleAuth />
               <FacebookAuth />
             </div>
-            {/* <article className="flex items-center gap-x-2 ">
-              <input type="checkbox" className="custom-checkbox" />
-              <p className="text-white  leading-[24px]  text-[10px]">
-                I agree to the{" "}
-                <span className="underline">Terms of Service</span> and{" "}
-                <span className="underline">Privacy Policy</span>
-              </p>
-            </article> */}
 
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="bg-white px-4 py-1 rounded-full w-full font-Inter"
+                className="bg-white px-4 py-2 rounded-full w-full font-Inter"
               >
                 Login
               </button>
