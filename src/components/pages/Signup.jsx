@@ -40,26 +40,26 @@ function Signup() {
             <EmailVerifcation onClose={handleCloseVerification} />
           )}
           <form className="space-y-4">
-            <div class="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
+            <div className="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
               <input
                 type="text"
-                class="w-full px-4 py-2 lg:bg-[#191821] bg-[#0e0f12]  rounded-full  placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white text-white    focus:outline-none"
+                className="w-full px-4 py-2 lg:bg-[#191821] bg-[#0e0f12]  rounded-full  placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white text-white    focus:outline-none"
                 placeholder="Full Name"
               />
             </div>
 
-            <div class="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
+            <div className="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
               <input
                 type="text"
-                class="w-full px-4 py-2 lg:bg-[#191821] bg-[#0e0f12]  rounded-full  placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white text-white    focus:outline-none"
+                className="w-full px-4 py-2 lg:bg-[#191821] bg-[#0e0f12]  rounded-full  placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white text-white    focus:outline-none"
                 placeholder="Email"
               />
             </div>
 
-            <div class="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
+            <div className="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
               <input
                 type="text"
-                class="w-full px-4 py-2 lg:bg-[#191821] bg-[#0e0f12]  rounded-full  placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white text-white    focus:outline-none"
+                className="w-full px-4 py-2 lg:bg-[#191821] bg-[#0e0f12]  rounded-full  placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white text-white    focus:outline-none"
                 placeholder="password"
               />
             </div>
