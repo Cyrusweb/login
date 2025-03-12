@@ -40,21 +40,29 @@ function Signup() {
             <EmailVerifcation onClose={handleCloseVerification} />
           )}
           <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="border border-[#A549E2] focus:outline-none bg-transparent placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white px-4 rounded-full py-2 w-full text-white"
-            />
-            <input
-              type="text"
-              placeholder="Email"
-              className="border border-[#A549E2] focus:outline-none bg-transparent placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white px-4 rounded-full py-2 w-full text-white"
-            />
-            <input
-              type="text"
-              placeholder="password"
-              className="border border-[#A549E2] focus:outline-none bg-transparent placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white px-4 rounded-full py-2 w-full text-white"
-            />
+            <div class="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
+              <input
+                type="text"
+                class="w-full px-4 py-2 lg:bg-[#191821] bg-[#0e0f12]  rounded-full  placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white text-white    focus:outline-none"
+                placeholder="Full Name"
+              />
+            </div>
+
+            <div class="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
+              <input
+                type="text"
+                class="w-full px-4 py-2 lg:bg-[#191821] bg-[#0e0f12]  rounded-full  placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white text-white    focus:outline-none"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
+              <input
+                type="text"
+                class="w-full px-4 py-2 lg:bg-[#191821] bg-[#0e0f12]  rounded-full  placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white text-white    focus:outline-none"
+                placeholder="password"
+              />
+            </div>
 
             <div className="flex items-center">
               <hr className="flex-1 h-px  border-[#A549E2]" />
