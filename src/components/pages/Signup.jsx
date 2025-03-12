@@ -74,7 +74,7 @@ function Signup() {
               <button
                 onClick={handleSignupClick}
                 type="submit"
-                className="bg-white px-4 py-2 rounded-full w-full font-Inter"
+                className="bg-gradient-to-r from-[#6857F6] to-[#A549E2] text-white px-4 py-2 rounded-full w-full font-Inter"
               >
                 Signup
               </button>

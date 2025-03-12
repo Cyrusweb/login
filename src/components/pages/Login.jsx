@@ -2,8 +2,17 @@ import React from "react";
 import GoogleAuth from "../GoogleAuth";
 import FacebookAuth from "./FacebookAuth";
 import { Link } from "react-router-dom";
+import OtpComfiretion from "./OtpComfiretion";
 
 function Login() {
+  const [showOtp, setOtp] = React.useState(false);
+  const handleSignupClick = (e) => {
+    e.preventDefault();
+    setOtp(true);
+  };
+  const handleCloseVerification = () => {
+    setOtp(false);
+  };
   return (
     <main className="bg-[#0e0f12] px-2 md:px-20 lg:px-4 py-4 min-h-screen lg:grid grid-cols-2 gap-x-10">
       <section className="lg:bg-[#191821]  font-Inter flex flex-col gap-y-32  md:gap-y-44 rounded-[18px] px-4  py-3">
@@ -24,13 +33,8 @@ function Login() {
               </p>
             </header>
           </div>
-
+          {showOtp && <OtpComfiretion onClose={handleCloseVerification} />}
           <form className="space-y-4">
-            {/* <input
-              type="text"
-              placeholder="Full Name"
-              className="border border-[#A549E2] focus:outline-none bg-transparent placeholder:font-Inter placeholder:font-[400] placeholder:text-[16px] placeholder:text-white px-4 rounded-full py-2 w-full text-white"
-            /> */}
             <div className="p-[1px] bg-gradient-to-r from-[#6857F6] rounded-full to-[#A549E2] ">
               <input
                 type="text"
@@ -59,8 +63,9 @@ function Login() {
 
             <div className="flex justify-center">
               <button
+                onClick={handleSignupClick}
                 type="submit"
-                className="bg-white px-4 py-2 rounded-full w-full font-Inter"
+                className="bg-gradient-to-r from-[#6857F6] to-[#A549E2] text-white px-4 py-2 rounded-full w-full font-Inter"
               >
                 Login
               </button>
