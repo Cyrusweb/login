@@ -17,14 +17,19 @@ function Welcome() {
             </p>
           </div>
           <div className=" text-center text-white">
+            {/* <Link to="/signup"> */}
             <Link to="/signup">
-              <div className="rounded-full border border-[#A549E2] px-6  lg:px-12 py-3">
-                Sign Up As a Freelancer
+              <div className="p-[1px] bg-gradient-to-r mt-4 from-[#6857F6] rounded-full to-[#A549E2] ">
+                <div className=" lg:bg-[#191821]  px-4 py-3  rounded-full  bg-[#0e0f12] ">
+                  Sign Up As a Freelancer
+                </div>
               </div>
             </Link>
-            <Link to="login">
-              <div className="rounded-full border border-[#A549E2] px-6  lg:px-12 py-3 mt-4 ">
-                Sign Up As a Client
+            <Link to="/login">
+              <div className="p-[1px] bg-gradient-to-r mt-4 from-[#6857F6] rounded-full to-[#A549E2] ">
+                <div className=" lg:bg-[#191821]  px-4 py-3  rounded-full  bg-[#0e0f12] ">
+                  Sign Up As a Client
+                </div>
               </div>
             </Link>
           </div>
